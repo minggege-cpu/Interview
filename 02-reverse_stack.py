@@ -20,7 +20,7 @@ class stack(object):
             self.stack.pop()
 
     def reverse(self):          # 逆序栈
-        while self.stack:       # 原栈为空时跳出循环
+        if self.stack:       # 原栈为空时跳出循环
             item = self.stack.pop()
             self.reserveStack.append(item)
             return self.reverse()   # 递归执行
