@@ -43,8 +43,8 @@ if __name__ == "__main__":
     memo = [0] * 21
     time1 = Timer("testFibonacci1()", "from __main__ import testFibonacci1")
     time2 = Timer("testFibonacci2()", "from __main__ import testFibonacci2")
-    print("累加所需时间：", time1.timeit(100))  # N=20的斐波那契数列运行100次 0.48560180000000003秒
-    print("append所需时间：", time2.timeit(100))  # N=20的斐波那契数列运行100次 0.0005940000000000945秒   由此可见效率相差极大
+    print("第一种方法所需时间：", time1.timeit(100))  # N=20的斐波那契数列运行100次 0.48560180000000003秒
+    print("第二种方法所需时间：", time2.timeit(100))  # N=20的斐波那契数列运行100次 0.0005940000000000945秒   由此可见效率相差极大
 
 
 
